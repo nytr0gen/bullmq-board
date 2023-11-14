@@ -1,0 +1,14 @@
+services:
+
+  bullmq-board:
+    build: .
+    restart: always
+    ports:
+      - 127.0.0.1:3000:3000
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+    environment:
+      REDIS_URL: redis://:password@redis:6379
+    command: pnpm watch
