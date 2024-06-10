@@ -1,5 +1,5 @@
 ## bullmq-board
 
-Zero configurability Bull Board based on https://github.com/felixmosh/bull-board. Made for https://github.com/taskforcesh/bullmq
+Auto-updating zero-configuration Bull Board based on https://github.com/felixmosh/bull-board. Made for https://github.com/taskforcesh/bullmq
 
 
