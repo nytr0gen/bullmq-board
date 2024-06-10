@@ -33,6 +33,7 @@ const queueNames = new Set();
 const checkForNewQueues = async () => {
     const redis = redisConnection();
     const allKeys = await redis.keys('bull:*:id');
+    allKeys.sort();
 
     for (const key of allKeys) {
         const name = key.split(':')[1]; // bull:queueName:id
