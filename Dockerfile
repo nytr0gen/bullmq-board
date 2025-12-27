@@ -1,7 +1,9 @@
-FROM node:22-alpine
+FROM node:25-alpine
+
+RUN npm install -g pnpm@latest
+
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
 
 RUN pnpm add -g pm2
 
